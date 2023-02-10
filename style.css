@@ -1,0 +1,440 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    color: #070707;
+}
+h2, header ul, #main .about-person-title, #main .lenguages, #skills .program-text  {
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+p, #main .about-person-text, #portfolio .project a, .text-request {
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+h2 {
+    font-size: 34px;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+p , a {
+    font-size: 18px;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+.container:not(#main .container, header .container) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+/* HEADER BEGIN */
+header .arrow-up-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+}
+header nav {
+    padding: 33px 0;
+    border-bottom: 1px solid #828282;
+    
+}   
+    
+    header ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+        header ul a {
+            color: #828282;
+        }
+        header ul a:hover {
+            color: #070707;
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;
+        }
+        header ul a:not(:hover) {
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;
+        }
+    header .menu-btn {
+        position: absolute;
+        top: 68px;
+        right: 30px;
+        display: none;
+        cursor: pointer;
+    }
+    header .menu-btn span::before {
+        display: block;
+        content: '';
+        width: 33px;
+        height: 4px;
+        background: #000;
+        margin-top: 4px;
+
+    }
+    header .menu-btn-active span:nth-child(3) {
+        display: none;
+    }
+    header .menu-btn-active span::before {
+        background: #828282;
+        
+    }
+    header .menu-btn-active span:nth-child(1)::before {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        position: relative;
+        top: 8px;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        
+    }
+    header .menu-btn-active span:nth-child(2)::before {
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+    }
+/* HEADER END */
+
+/* MAIN BEGIN */
+#main {
+    padding: 40px 0 105px 0;
+}
+    #main .container {
+        background-image: url('img/bg-person.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        padding-bottom: 387px;
+    }
+        #main .info-about-person {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            margin-bottom: 30px;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+        }
+    
+            #main .about-person-title {
+                font-size: 46px;
+            }
+            #main .about-person-text {
+                width: 156px;
+                margin-right: 60px;
+            }
+            #main .lenguages {
+                -webkit-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                        transform: rotate(-90deg);
+                position: relative;
+                right: -32px;
+            }
+
+                #main .leng:hover {
+                    color: #828282;
+                    -webkit-transition: .3s;
+                    -o-transition: .3s;
+                    transition: .3s;
+                }
+                #main .leng:not(:hover) {
+                    -webkit-transition: .3s;
+                    -o-transition: .3s;
+                    transition: .3s;
+                }
+/* MAIN END */
+
+/* ABOUT ME BEGIN */
+#about-me {
+    padding: 120px 0 107px 0;
+    background: #F6F6F6;
+}
+    #about-me .about-text {
+        text-align: center;
+        margin-top: 18px;
+        width: 480px;
+    }
+        #about-me .about-text p:nth-child(2) {
+            margin: 30px 0 30px 0;
+        }
+/* ABOUTN ME END */
+
+/* SKILLS BEGIN */
+#skills {
+    padding: 90px 0 110px 0;
+}
+
+    #skills .skills-text {
+        margin: 70px 0 84px 0;
+    }
+    #skills .programs {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+        #skills .program {
+            width: 170px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            
+        }
+            #skills .program-text {
+                font-size: 14px;
+                color: #828282;
+                margin-top: 24px;
+                margin-bottom: 60px;
+            }
+            #skills .stars img:nth-child(-n+4) {
+                margin-right: 10px;
+            }
+/* SKILLS END */
+
+/* PORTFOLIO BEGIN */
+#portfolio {
+    background: #F6F6F6;
+    padding-top: 112px;
+}
+    #portfolio .portfolio-title {
+        margin-bottom: 47px;
+    }
+    #portfolio .projects {
+        width: 100%;
+    }
+        #portfolio .project {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        #portfolio .project a {
+            text-decoration: underline;
+        }
+        #portfolio .fashion-store {
+            background: url('img/online-fashion-store.jpg') no-repeat;
+            background-size: contain;
+            padding-top: 554px;
+        }
+        #portfolio .reebok-store {
+            background: url('img/reebok-store.jpg') no-repeat;
+            background-size: contain;
+            padding-top: 566px;
+        }
+        #portfolio .braun-landing {
+            background: url('img/braun-landing.jpg') no-repeat;
+            background-size: contain;
+            padding-top: 566px;
+        }
+/* PORTFOLIO END */
+/* FOOTER BEGIN */
+footer {
+    padding: 115px 0 125px;
+    text-align: center;
+}
+
+    .footer-text {
+        width: 275px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    #footer-btn {
+        background: #070707;
+        color: #fff;
+        font-size: 18px;    
+        line-height: 22px;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 50px;
+        margin-bottom: 85px;
+        cursor: pointer;
+    }
+
+    footer .socials {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 300px;
+        margin-bottom: 45px;
+    }
+    .text-request {
+        font-size: 14px;
+        color: #828282;
+        width: 240px;
+    }
+/* FOOTER END */
+
+/* MEDIA QUERIES BEGIN */
+@media screen and (min-width: 320px) and (max-width: 390px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    .container {
+        width: 320px;
+    }
+    header .arrow-up-icon {
+        right: 0;
+    }
+    header .arrow-up-icon svg {
+        width: 70%;
+    }
+    header nav {
+        border-bottom: none;
+        padding: 0;
+    }
+    header ul {
+        display: none;
+    }
+    header ul.active {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        padding-top: 68px;
+        padding-bottom: 350px;
+        padding-left: 20px;
+        margin-left: -20px;
+    }
+    header ul.active a {
+        font-size: 34px;
+    }
+    header ul.active li:nth-child(-n+4) {
+        margin-bottom: 60px;
+    }
+    #main {
+        padding-top: 65px;
+    }
+    header .menu-btn {
+        display: block;
+        z-index: 1;
+    }
+    #main .container {
+        padding-bottom: 500px;
+        background-image: url('img/bg-person-mob.jpg');
+    }
+    #main .info-about-person {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+    }
+    #main .about-person-title {
+        margin-bottom: 23px;
+    }
+    #main .lenguages {
+        display: none;
+    }
+    #main .leng-actv {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 680px;
+        font-size: 34px;
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+    } 
+    #about-me {
+        padding: 80px 0;
+    }
+    #about-me .about-text {
+        width: 100%;
+    }
+    #skills {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    #skills .skills-text {
+        margin: 50px 0 70px 0;
+    }
+    #skills .programs {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    }
+    #skills .program {
+        margin-bottom: 80px;
+    }
+    #skills .program-text {
+        margin-bottom: 40px;
+    }
+    #portfolio {
+        padding-top: 80px;
+    }
+    #portfolio .project {
+        margin-bottom: 75px;
+    }
+    #portfolio .portfolio-title {
+        margin-bottom: 64px;
+    }
+    #portfolio .fashion-store {
+        padding-top: 205px;
+    }
+    #portfolio .reebok-store {
+        padding-top: 210px;
+    }
+    #portfolio .braun-landing {
+        padding-top: 210px; 
+    }
+    footer {
+        padding: 80px 0 90px 0;
+    }
+    .footer-text {
+        margin: 27px 0 40px;
+    }
+    #footer-btn {
+        padding: 12px 97px;
+    }
+    .text-request {
+        font-size: 18px;
+        width: 100%;
+    }
+    
+}
