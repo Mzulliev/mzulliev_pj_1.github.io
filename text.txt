@@ -1,6 +1,0 @@
-h2, header ul, #main .about-person-title, #main .lenguages, #skills .program-text  {
-    font-family: 'Gilroy-Bold', sans-serif;
-}
-p, #main .about-person-text, #portfolio .project a, .text-request {
-    font-family: 'Gilroy-Medium', sans-serif;
-}
